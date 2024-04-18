@@ -1,5 +1,6 @@
-import { greeting } from "../src/index";
+import { CanvasView, CanvasViewFactory } from "../src/index";
 
 test("index", function () {
-    expect(greeting("World")).toBe("Hello, World!");
+    expect(typeof CanvasViewFactory === 'function').toBe(true);
+    expect(typeof CanvasView === 'function').toBe(true);
 });
